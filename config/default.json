@@ -1,0 +1,6 @@
+{
+  "port":3004,
+  "jwtSecret": "shamil is the best",
+  "mongoURI": "mongodb+srv://shamil:ytipsaewr3521@cluster0.psgl1.mongodb.net/app",
+  "baseUrl": "http://localhost:3004"
+}
