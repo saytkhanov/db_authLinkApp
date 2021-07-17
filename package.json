@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index",
-    "server": "node index",
-    "front-app": "npm run start -- prefix front-app",
-    "dev": "concurrently \"npm run server\"\"npm run front-app\""
+    "server": "nodemon index",
+    "client": "cd ./client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +25,7 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.7",
+    "concurrently": "^6.2.0",
     "prettier": "^2.3.1"
   }
 }

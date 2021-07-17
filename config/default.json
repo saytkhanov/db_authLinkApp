@@ -1,6 +1,6 @@
 {
   "port":3004,
-  "jwtSecret": "shamil is the best",
-  "mongoURI": "mongodb+srv://shamil:ytipsaewr3521@cluster0.psgl1.mongodb.net/app",
+  "jwtSecret": "3rr3r3r3r",
+  "mongoURI": "mongodb+srv://fakeAPI:fake171717@cluster0.l9vs1.mongodb.net/linksAuth",
   "baseUrl": "http://localhost:3004"
 }

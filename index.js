@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
 const config = require('config')
+const path = require('path')
 
 app.use(cors())
 app.use(express.json())
@@ -12,6 +13,10 @@ app.use('/api/auth', require(
 ))
 app.use('/api/link', require('./routes/link.routes'));
 app.use('/t', require('./routes/redirect.routes'))
+app.use(express.static(path.resolve(__dirname, 'client', 'build')))
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+})
 
 const PORT = config.get("port") || 5000
 
