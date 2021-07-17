@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
-const config = require('config')
+require("dotenv").config();
 const path = require('path')
 
 app.use(cors())
@@ -18,11 +18,11 @@ app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
 })
 
-const PORT = config.get("port") || 5000
+const PORT = process.env.port || 5000
 
 const start = async () => {
   try {
-    await mongoose.connect(config.get('mongoURI'), {
+    await mongoose.connect(process.env.mongoURI, {
       useUnifiedTopology: true,
       useNewUrlParser: true,
       useFindAndModify: false,
