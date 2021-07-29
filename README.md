@@ -40,7 +40,7 @@ npm run dev
 ___
 
 ### Что мне понадобилось:
- -![Node-JS](https://img.shields.io/badge/-Node--JS-blue)
+ - ![Node-JS](https://img.shields.io/badge/-Node--JS-blue)
    ![Express](https://img.shields.io/badge/Express-yellow)
    ![MongoDB](https://img.shields.io/badge/-MongoDB-g)
     ![React](https://img.shields.io/badge/React-blue?style=flat-square&logo=react)
