@@ -1,4 +1,4 @@
-#Приложение сокращение ссылок
+# Приложение сокращение ссылок
 ____
 
 ![gif](https://github.com/saytkhanov/links-mern-app/blob/main/1%20(2).gif)
